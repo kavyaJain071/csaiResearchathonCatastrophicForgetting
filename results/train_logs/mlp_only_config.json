@@ -1,0 +1,27 @@
+{
+  "name": "mlp_only",
+  "modules": "mlp",
+  "lr": 0.0002,
+  "epochs": 2,
+  "rank": 16,
+  "alpha": 32,
+  "seed": 42,
+  "out_root": "/kaggle/working/runs",
+  "target_modules": [
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "dropout": 0.05,
+  "per_device_batch": 4,
+  "grad_accum": 8,
+  "effective_batch": 32,
+  "lr_schedule": "cosine",
+  "warmup_steps": 15,
+  "precision": "fp16",
+  "max_seq_len": 512,
+  "train_examples": 7473,
+  "save_every_steps": 50,
+  "trainable_params": 14106624,
+  "total_params": 1557820928
+}
