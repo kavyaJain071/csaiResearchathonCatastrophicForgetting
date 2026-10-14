@@ -17,7 +17,7 @@ for s in a.suites.split(","):
     margs = "pretrained=" + (a.merged or "Qwen/Qwen2.5-1.5B") + ",dtype=float16"
     if a.peft: margs += f",peft={a.peft}"
     for bs in sizes:
-        r = subprocess.run(f"lm_eval --model hf --model_args {margs} --tasks {tasks} --num_fewshot {shots} "
+        r = subprocess.run(f"PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True lm_eval --model hf --model_args {margs} --tasks {tasks} --num_fewshot {shots} "
                            f"--batch_size {bs} {extra} --output_path {folder}", shell=True)
         if r.returncode == 0: break
         print("FAILED at batch size", bs, "-> retrying smaller")
