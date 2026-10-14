@@ -1,0 +1,27 @@
+{
+  "name": "A",
+  "mix": "gsm8k:all",
+  "schedule": "shuffle",
+  "modules": "all",
+  "lr": 0.001,
+  "epochs": 1,
+  "rank": 16,
+  "alpha": 32,
+  "seed": 42,
+  "init_adapter": null,
+  "save_steps": 25,
+  "out_root": "/kaggle/working/runs",
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "train_examples": 7473,
+  "max_steps": 234,
+  "train_seconds": 1737,
+  "trainable_params": 18464768
+}
