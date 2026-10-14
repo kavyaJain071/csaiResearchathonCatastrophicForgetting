@@ -1,0 +1,27 @@
+{
+  "name": "M3_targeted",
+  "mix": "gsm8k:all,sciq:3200",
+  "schedule": "shuffle",
+  "modules": "all",
+  "lr": 0.001,
+  "epochs": 1,
+  "rank": 16,
+  "alpha": 32,
+  "seed": 42,
+  "init_adapter": null,
+  "save_steps": 100,
+  "out_root": "/kaggle/working/runs",
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "train_examples": 10673,
+  "max_steps": 334,
+  "train_seconds": 2274,
+  "trainable_params": 18464768
+}
