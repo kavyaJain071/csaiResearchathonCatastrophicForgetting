@@ -1,0 +1,2 @@
+label,gsm8k,gsm8k_se,mmlu,mmlu_se,mmlu_stem,mmlu_stem_se,mmlu_humanities,mmlu_humanities_se,mmlu_social,mmlu_social_se,mmlu_other,mmlu_other_se,arc,arc_se,hellaswag,hellaswag_se,winogrande,winogrande_se,sciq,sciq_se
+base,0.6224412433661866,0.01335315066635854,,,,,,,,,,,0.449,0.015736792768752044,0.584,0.015594460144140522,0.644,0.015149042659306678,,
