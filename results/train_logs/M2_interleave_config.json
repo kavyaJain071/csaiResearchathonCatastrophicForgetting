@@ -22,6 +22,6 @@
   ],
   "train_examples": 10656,
   "max_steps": 333,
-  "train_seconds": 2631,
+  "train_seconds": 2697,
   "trainable_params": 18464768
 }
