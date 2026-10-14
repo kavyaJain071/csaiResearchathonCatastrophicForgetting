@@ -1,0 +1,27 @@
+{
+  "name": "S3",
+  "mix": "gsm8k:700,sciq:700,alpaca:2000",
+  "schedule": "shuffle",
+  "modules": "all",
+  "lr": 0.001,
+  "epochs": 1,
+  "rank": 16,
+  "alpha": 32,
+  "seed": 42,
+  "init_adapter": "/kaggle/working/runs/S2/final",
+  "save_steps": 100,
+  "out_root": "/kaggle/working/runs",
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "train_examples": 3400,
+  "max_steps": 107,
+  "train_seconds": 817,
+  "trainable_params": 18464768
+}
