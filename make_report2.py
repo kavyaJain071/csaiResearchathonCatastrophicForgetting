@@ -205,7 +205,7 @@ L += ["## 5. Adapter composition", "",
 L += img("results/fig_q4_merging.png", "Merging") + table(Q4) + ["", "Change vs base (points):", ""] + change_table(Q4) + [""] + bullets(Q4) + [""]
 
 L += ["## Gain versus forgetting", ""] + img("results/fig_tradeoff_all.png", "Trade-off") + [
-      "## Key observations", "", "*To be written from the results above.*", "",
+      *(open("observations.md").read().split("\n") + [""] if os.path.exists("observations.md") else ["## Key observations", "", "*To be written from the results above.*", ""]),
       "## Limitations", "",
       "- Single seed per configuration; differences smaller than about two standard errors should be treated as noise.",
       "- Limited evaluations in sections 2 to 5 (first 300 GSM8K questions, 1,000 questions for ARC, HellaSwag and Winogrande, 50 per MMLU subject).",
